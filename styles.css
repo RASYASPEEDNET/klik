@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  font-size: 30px;
+  color: red;
+  text-shadow: 0 0 10px red, 0 0 20px crimson, 0 0 40px pink;
+  animation: floatUp 1s ease-out forwards;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100px) scale(1.5);
+    opacity: 0;
+  }
+}
